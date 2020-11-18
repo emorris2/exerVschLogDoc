@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Console Stuff</title>
+
+  <style>
+    #container {
+      padding: 100px;
+    }
+    #myButton {
+      font-family: arial;
+      font-size: 50px;
+      font-weight: darker;
+      background-color: #blue;
+      border: 3px #333 solid;
+      padding: 15px;
+    }
+    #myButton:hover {
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <button id="myButton">click it to ticket :)</button>
+  </div>
+  <script>
+    let myButton = document.querySelector("#myButton");
+    myButton.addEventListener("click", doSomething, false);
+
+    function doSomething(e) {
+      console.log("Is this logging document to console?");
+      console.dir("Is this logging document to console?");
+    }
+  </script>
+</body>
