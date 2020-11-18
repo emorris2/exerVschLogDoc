@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <title>Console Stuff</title>
+  <title>Logging document</title>
+  <script src="index.js"></script>
 
   <style>
     #container {
@@ -31,8 +32,8 @@
     myButton.addEventListener("click", doSomething, false);
 
     function doSomething(e) {
-      console.log("Is this logging document to console?");
-      console.dir("Is this logging document to console?");
+      console.log(document);
+      console.dir("document?");
     }
   </script>
 </body>
